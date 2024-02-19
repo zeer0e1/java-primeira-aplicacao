@@ -1,0 +1,24 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class For {
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+        Scanner input = new Scanner(System.in);
+
+        double mediaAvaliacao = 0;
+        double nota = 0;
+
+        for (int i = 0; i < 3; i++) {
+            System.out.print("Diga sua avaliação: ");
+            nota = input.nextDouble();
+            mediaAvaliacao += nota;
+
+        }
+
+        System.out.println("Media de avaliações: " + mediaAvaliacao / 3);
+
+
+        input.close();
+    }
+}
